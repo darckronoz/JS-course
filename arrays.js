@@ -57,7 +57,7 @@ var cosasm = cosas.map(function(m) {
     return m.name;
 });
 
-//FIND array con objetos que cumplan la condición
+//FIND retorna el primer objeto completo que cumple con la condición indicada.
 
 var cosasf = cosas.find(function(x){
     return x.name === "aló";

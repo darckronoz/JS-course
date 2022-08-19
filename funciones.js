@@ -27,3 +27,4 @@ function sum(a, B) {
 
 //hoisting
 
+//**// */
