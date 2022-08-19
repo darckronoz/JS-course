@@ -30,4 +30,51 @@ var frunas = frunas.shift();
 
 var pos = frunas.indexOf("Guanabana");
 
+//
+
+var cosas = [
+    {name: "aló", thing: 1},
+    {name: "alé", thing: 2},
+    {name: "alí", thing: 3},
+    {name: "alá", thing: 4},
+    {name: "a", thing: 5},
+    {name: "b", thing: 6},
+    {name: "c", thing: 8},
+    {name: "d", thing: 9},
+]
+
+//FILTER generamos un nuevo array con un filtro especifico
+
+var cosasx = cosas.filter(function(n) {
+    return n.thing >= 3;
+});
+
+console.log(cosasx);
+
+//MAP generamos un nuevo array con unicamente el dato que solicitamos
+
+var cosasm = cosas.map(function(m) {
+    return m.name;
+});
+
+//FIND array con objetos que cumplan la condición
+
+var cosasf = cosas.find(function(x){
+    return x.name === "aló";
+});
+
+//foreach
+
+cosas.forEach(function(w) {
+    console.log(w.name); 
+});
+
+
+//SOME true or false dependiendo de si cumple la condición
+//dependiendo de si existe o no un objeto que cumpla la condición.
+//ese man de platzi explica re mal.
+
+var cosasBoo = cosas.some(function(b){
+    return b.thing < 7;
+});
 
